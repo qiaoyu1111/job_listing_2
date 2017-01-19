@@ -12,10 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
 .jumbotron {
   background-image:url('http://y.photo.qq.com/img?s=n0m7YMg0L&l=y.jpg');
