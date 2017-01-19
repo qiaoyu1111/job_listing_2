@@ -5,6 +5,11 @@ Rails.application.routes.draw do
     resources :jobs
   end
 
+  member do
+      post :publish
+    post :hide
+  end
+
   resources :jobs
 
   root 'jobs#index'
