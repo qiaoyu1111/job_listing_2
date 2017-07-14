@@ -1,0 +1,13 @@
+<div class="comment clearfix">
+  <div class="common_content">
+    <hr>
+    <p class="common_name"><strong><%= comment.name %></strong></p>
+    <p class="common_body"><%= comment.body %></p>
+    <p class="common_time"><%= time_ago_in_words(comment.created_at) %>Ago</p>
+  </div>
+
+  <p><%= link_to 'DE', [comment.job, comment],
+                  method: :delete,
+                  class: "button",
+                  data: { confirm: 'Are you sure?' }%></p>
+</div>

@@ -8,3 +8,11 @@
 <div class="text-center">
   <%= link_to("投递履历表", new_job_resume_path(@job), :style => "font-size: 30px; text-decoration:underline;") %>
 </div>
+
+<div id="comments">
+  <h2><%= @job.comments.count %>Comments</h2>
+  <%= render @job.comments %>
+
+  <h3>Add a comment:</h3>
+  <%= render "comments/form" %>
+</div>

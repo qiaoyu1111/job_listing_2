@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   resources :jobs do
     resources :resumes
+    resources :comments
   end
 
   root 'welcome#index'
